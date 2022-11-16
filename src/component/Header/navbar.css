@@ -1,0 +1,10 @@
+.edit{
+    background-color : "#fff important!";
+     color : "#000";
+      width : "35%"
+}
+
+.edit:hover{
+    background-color: aqua;
+    color: black;
+}

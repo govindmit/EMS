@@ -1,16 +1,18 @@
 import React from "react";
+import Navbar from "./Header/Navbar";
 
 const Dashboard = () => {
   const user = localStorage.getItem("user");
   const data = JSON.parse(user);
 
   return (
-    <div>
+    <>
+      <Navbar />
       <h1>
         {data.name}
         {data.lastName}
       </h1>
-    </div>
+    </>
   );
 };
 
