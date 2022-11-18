@@ -8,7 +8,7 @@ import { Grid, Box, Paper, FormHelperText } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState, useEffect } from "react";
-import { API } from "../config";
+import { API } from "../../config";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const theme = createTheme();

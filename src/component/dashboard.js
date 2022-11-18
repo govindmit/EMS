@@ -8,10 +8,10 @@ const Dashboard = () => {
   return (
     <>
       <Navbar />
-      <h1>
+      {/* <h1>
         {data.name}
         {data.lastName}
-      </h1>
+      </h1> */}
     </>
   );
 };

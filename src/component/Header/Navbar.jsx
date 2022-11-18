@@ -14,7 +14,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './navbar.css'
 
-const Navbar = () => {
+const Navbar = ({user}) => {
+  // console.log("user--------------------->>", user.token)
   const [isDrawerOpen, setISDrawerOpen] = useState(false);
   return (
     <>
@@ -53,7 +54,7 @@ const Navbar = () => {
             />
             </Box>
             <Typography variant="h6" sx={{ fontSize : "16px", fontWeight : 800, margin : "2px 0px"}}>MI98126412 - Employee Name</Typography>
-            <Typography variant="h6" sx={{ fontSize : "13px", color : '#219ebc', margin : "2px 0px"}}>employeename@gmail.com</Typography>
+            <Typography variant="h6" sx={{ fontSize : "13px", color : '#219ebc', margin : "2px 0px"}}>employee@gmail.com</Typography>
             <Typography variant="h6" sx={{ fontSize : "13px", margin : "2px 0px"}}>Employee Designation</Typography>
             <Box sx={{ display : "flex", justifyContent : "center", margin : "8px 0px"}}>
             <Link to='/profile' target='_blank'><Button sx={{ backgroundColor : "#fff", color : "#000", width : "25px"}}>Edit</Button></Link>
